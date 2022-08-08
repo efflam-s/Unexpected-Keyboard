@@ -4,6 +4,7 @@ PACKAGE_NAME = juloo.keyboard2
 
 ANDROID_PLATFORM_VERSION = android-30
 JAVA_VERSION = 1.7
+ANDROID_HOME = /home/efflam/1.8.0_342
 
 SRC_DIR = srcs
 RES_DIR = res

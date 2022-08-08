@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <keyboard>
   <row>
-    <key key0="1" key2="esc" key3="&amp;"/>
+    <key key0="1" key2="esc" key4="&amp;"/>
     <key key0="2" key2="²" key3="&quot;" key4="\#"/>
     <key key0="3" key3="~" key4="{"/>
     <key key0="4" key3="(" key4="["/>
@@ -16,17 +16,17 @@
     <key key0="a" key4="à"/>
     <key key0="z"/>
     <key key0="e" key2="é" key3="€" key4="è"/>
-    <key key0="r" key2="accent_aigu" key3="accent_grave"/>
+    <key key0="r" key2="accent_aigu" key4="accent_grave"/>
     <key key0="t"/>
     <key key0="y"/>
     <key key0="u" key4="ù"/>
     <key key0="i" key1="accent_trema" key2="ï"/>
-    <key key0="o" key1="accent_circonflexe" key4="œ"/>
+    <key key0="o" key1="accent_circonflexe" key2="ô" key4="œ"/>
     <key key0="p" key1="£" key3="$"/>
   </row>
   <row>
     <key key0="q" key2="tab"/>
-    <key key0="s" key3="loc ß"/>
+    <key key0="s" key4="ß"/>
     <key key0="d"/>
     <key key0="f"/>
     <key key0="g"/>
@@ -41,10 +41,10 @@
     <key key0="w" key3="&lt;" key4="&gt;"/>
     <key key0="x" key3="«" key4="»"/>
     <key key0="c" key3="accent_cedille" key4="ç"/>
-    <key key0="v" key3="," key4="."/>
-    <key key0="b" key3="!" key4="§"/>
-    <key key0="n" key1="loc accent_tilde" key2="ñ"/>
-    <key key0="'" key1="?" key2=";" key3="/" key4="\"/>
+    <key key0="v"/>
+    <key key0="b"/>
+    <key key0="n" key1="accent_tilde" key2="ñ"/>
+    <key key0="'" key1="\?" key3="/"/>
     <key width="1.5" key0="backspace" key2="delete"/>
   </row>
 </keyboard>
