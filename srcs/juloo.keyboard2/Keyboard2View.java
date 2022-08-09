@@ -247,7 +247,14 @@ public class Keyboard2View extends View
         x += k.shift * _keyWidth;
         float keyW = _keyWidth * k.width - _config.keyHorizontalInterval;
         boolean isKeyDown = _pointers.isKeyDown(k);
-        _tmpRect.set(x, y, x + keyW, y + keyH);
+        // TODO: put the 2 following parameters in theme and/or config
+        boolean keyPopup = true;
+        float popupOffset = 1f;
+        if (keyPopup && isKeyDown)
+          _tmpRect.set(x, y - popupOffset, x + keyW, y + keyH);
+          y -= popupOffset;
+        else
+          _tmpRect.set(x, y, x + keyW, y + keyH);
         canvas.drawRoundRect(_tmpRect, _theme.keyBorderRadius, _theme.keyBorderRadius,
             isKeyDown ? _theme.keyDownBgPaint : _theme.keyBgPaint);
         drawLabel(canvas, k.key0, keyW / 2f + x, y, keyH, isKeyDown);
@@ -265,6 +272,8 @@ public class Keyboard2View extends View
           drawSubLabel(canvas, k.key2, x, y, keyW, keyH, Paint.Align.RIGHT, Vertical.TOP, isKeyDown);
           drawSubLabel(canvas, k.key4, x, y, keyW, keyH, Paint.Align.RIGHT, Vertical.BOTTOM, isKeyDown);
         }
+        if (keyPopup && isKeyDown)
+          y += popupOffset;
         x += _keyWidth * k.width;
       }
       y += row.height * _config.keyHeight;
